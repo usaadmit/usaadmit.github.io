@@ -1,0 +1,354 @@
+body,html {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	margin: 0;
+	text-align: center;
+	font-family: 'Bungee', cursive;;
+	font-style: bold;
+	font-size: 54px;
+}
+
+h2 {
+	margin: 0;
+	text-align: center;
+	font-family: 'Barlow', sans-serif;
+	font-size: 24px;
+	font-style: none;
+	font-weight: 100;
+}
+
+h3 {
+	margin: 0;
+	padding-bottom: 2%;
+	text-align: center;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 36px;
+	font-style: bold;
+	font-weight: 100;
+}
+
+p {
+	margin: 0;
+	font-family: 'Roboto';
+	font-size: 20px;
+	font-style: none;
+	font-weight: 100;
+	line-height: 200%;
+}
+
+div.polaroid {
+  width: 80%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+	float: left;
+	vertical-align: top;
+	margin-right: 40px;
+}
+
+div.image_container {
+  text-align: center;
+  padding: 10px 20px;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: underline;
+}
+
+@keyframes animationFrames {
+  0% {
+    opacity:0;
+    transform:  translate(0px,25px)  ;
+  }
+  100% {
+    opacity:1;
+    transform:  translate(0px,0px)  ;
+  }
+}
+
+.banner {
+	width: 100%;
+	height: 85%;
+	margin: 0;
+	padding: 0;
+	background-image: linear-gradient( rgba(0,0,0,.3), rgba(0,0,0,.3) ),url("../images/landing-image-columbia.jpg");
+	background-repeat:no-repeat;
+	background-size:auto;
+	background-position: center;
+	position: relative;
+	background-attachment: fixed;
+	transition: background 1s;
+}
+
+.caption {
+	position: relative;
+    left: 0;
+    top: 40%;
+    width: 100%;
+    text-align: center;
+}
+
+
+.footer {
+	height: 12%;
+	width: 100%;
+	top: 88%;
+	background-color: #f3f3f3f3;
+	position: absolute;
+}
+
+.slogan {
+	width: 40%;
+	top: 35%;
+	left: 30%;
+	right: 30%;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 90px;
+	position: absolute;
+	text-align: center;
+	padding: 0px 10px 0px 10px;
+	color: #fff;
+}
+
+.tab-container {
+	height: 15%;
+	position: relative;
+	display: grid;
+	padding: 0px 120px 0px 120px;
+}
+
+.tab {
+	padding: 20px 10px 10px 10px;
+	margin: 10px;
+	text-align: center;
+	border-bottom: none;
+}
+
+.tab-center {
+	padding: 5px;
+	margin: 10px;
+	text-align: center;
+	border-bottom: none;
+}
+
+.tab:hover {
+	border-bottom: 1px solid rgb(192,192,192);
+}
+
+.tabDescription {
+	width: 60%;
+	animation: animationFrames ease 0.5s;
+	padding: 5% 20% 5% 20%;
+}
+
+.gallery-container {
+	position: relative;
+	left: 25%;
+	width: 50%;
+	display: grid;
+	grid-template-columns: auto auto auto auto auto;
+	padding-bottom: 75px;
+}
+
+.gallery-item {
+	padding-bottom: 5px;
+	margin: 10px;
+	border-bottom: none;
+}
+
+.gallery-item img {
+	width: 100%;
+}
+
+.gallery-item:hover {
+	border-bottom: 1px solid rgb(192,192,192);
+}
+
+.gallery-item img:hover {
+	opacity: 0.5;
+}
+
+.gallery-display {
+	width:100%;
+}
+
+.gallery-display img {
+	width: 100%
+}
+
+.tabSelected {
+	border-bottom: 1px solid black;
+}
+
+.tabSelected:hover {
+	border-bottom: 1px solid black;
+}
+
+.product-container {
+	display: grid;
+	grid-template-columns: 50% 50%;
+	border: 1px solid black;
+}
+
+.product-header {
+	padding: 10px;
+	background-color: black;
+	color: white;
+	text-align: left;
+	border: none;
+}
+
+.product-item {
+	padding: 10px;
+	border: none;
+	text-align: left;
+}
+
+.itemgallery-container {
+	width: 100%;
+	display: grid;
+	grid-template-columns: 33% 33% 33%;
+	grid-row-gap: 150px;
+}
+
+.itemgallery-item {
+	padding: 0px 20px 0px 20px;
+}
+
+
+.itemgallery-itemimage {
+	margin: 0px 0px 10px 0px;
+    border: 1px solid gray;
+    background-color: white;
+}
+
+input[type=number], input[type=text], select, textarea {
+	font-family: SourceSansPro;
+	font-size: 20px;
+	width: 100%;
+    padding: 15px;
+    margin: 0;
+    display: inline;
+    border: 1px solid gray;
+    box-sizing: border-box;
+    transition-duration: 0.0s;
+}
+
+input[type=number]:focus, input[type=text]:focus, select:focus, textarea:focus, input[type=number]:hover, input[type=text]:hover, select:hover, textarea:hover {
+	border: 1px solid black;
+}
+
+option{
+	font-family: SourceSansPro;
+	font-size: 20px;
+	line-height: 50px;
+    padding: 15px;
+}
+
+input[type=submit] {
+	background-color: transparent;
+    border: 2px solid black;
+    border-radius: 5px;
+    color: black;
+    padding: 25px 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 20px;
+    transition-duration: 0.3s;
+    cursor: pointer;
+    font-family: SourceSansPro;
+    font-style: italic;
+}
+
+input[type=submit]:hover {
+	background-color: black;
+	color: white;
+}
+
+.costCalculator-item {
+	padding: 40px;
+	text-align: center;
+	position: relative;
+}
+
+.enabled {
+	opacity: 1;
+	pointer-events: auto;
+	cursor: pointer;
+}
+
+.disabled {
+	opacity: 0.5;
+	pointer-events: none;
+	cursor: default;
+}
+
+#downarrow {
+	top: 12%;
+	width: 4%;
+	height: 50px;
+	left: 48%;
+	right: 48%;
+	position: absolute;
+	background-image: url("../images/down-arrow-direction.png");
+	background-size: cover;
+	background-position: center;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+		font-family: 'Barlow', sans-serif;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+		margin:none;
+    border: none;
+		border: 0 0 0 0;
+		margin: 0 0 0 0;
+    cursor: pointer;
+		font-family: 'Barlow', sans-serif;
+		font-style: normal;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+label {
+		font-family: 'Barlow', sans-serif;
+}
