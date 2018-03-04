@@ -94,7 +94,7 @@
         </p>
 
         <div class="container">
-          <form action="scripts/send_form_email.php">
+          <form action="https://formspree.io/parul.usaadmit@gmail.com" method="POST">
 
             <label for="first_name">First Name</label>
             <input type="text" id="fname" name="firstname" placeholder="Your name...">
@@ -103,13 +103,15 @@
             <input type="text" id="lname" name="lastname" placeholder="Your last name...">
 
             <label for="email">Email</label>
-            <input type="text" id="email" name="email" placeholder="Your email address...">
+            <input type="text" id="email" name="_replyto" placeholder="Your email address...">
 
             <label for="telephone">Phone Number</label>
             <input type="text" id="telephone" name="telephone" placeholder="(___) ___ - ____">
 
             <label for="message">Message</label>
             <textarea id="message" name="message" placeholder="Enter email body here..." style="height:30%"></textarea>
+
+            <input type="hidden" name="_subject" value="New Client Contact Email!" />
 
             <input type="submit" value="Submit">
 
